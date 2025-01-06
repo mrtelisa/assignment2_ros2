@@ -3,13 +3,13 @@ from setuptools import setup
 package_name = 'ass2_ros2'
 
 setup(
-    name=package_name,
-    version='0.0.0',
-    packages=[package_name],
+    name='ass2_ros2',
+    version='0.0.1',
+    packages=['ass2_ros2'],
     data_files=[
         ('share/ament_index/resource_index/packages',
-            ['resource/' + package_name]),
-        ('share/' + package_name, ['package.xml']),
+            ['resource/' + 'ass2_ros2']),
+        ('share/' + 'ass2_ros2', ['package.xml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -19,7 +19,8 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
-        'console_scripts': [
+        'console_scripts': [  
+            'UI_node = ass2_ros2.UI:main',
         ],
     },
 )
