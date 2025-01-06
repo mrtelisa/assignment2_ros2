@@ -25,7 +25,13 @@ The goal of the project was to create a node which makes the robot move in the G
     ```bash
     git switch ros2
     ```
-- Clone also this repository in the workspace.
+- Clone also this repository in the workspace
+
+- Build the workspace: run the following command in your workspace
+    ```bash
+    colcon build
+    ```
+
 
 ## Usage
 
